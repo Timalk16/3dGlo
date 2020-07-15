@@ -9,7 +9,7 @@ const renameText = function(n, textForms) {
 };
 
 
-const whatTimeOfDay = date => {
+const whatTimeofDay = date => {
   const hour = date.getHours();
   let timeOfDay;
   switch (true) {
@@ -50,7 +50,7 @@ const remainingDays = countDays('1 January 2021', date);
 const itemText = document.createElement('div');
 const spanTime = document.createElement('span');
 
-itemText.innerHTML = `<div>${whatTimeOfDay(date)}</div>
+itemText.innerHTML = `<div>${whatTimeofDay(date)}</div>
                       <div>Сегодня: ${currentDay}</div>
                       <span class="timeText">Текущее время:</span> 
                       <div>До нового года осталось 
